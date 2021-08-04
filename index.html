@@ -2,79 +2,7 @@
 <html>
 	<head>
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-		<script>
-			let abspielen = new Audio('Siemens_Fountain_ringtone.wav');
-			function setPosition(player) {
-				player
-					.css('top', 500)
-					.css('left', 250);
-			}	
-			
-			
-			$(function() {
-				$('html').on('click', function() {					
-					setPosition($('#maus'));
-				});
-				
-				
-				let arr = [ "XXXX",
-							"X XX",
-							"  XX"];
-				
-				for(let i=0; i < arr.length; i++) {
-					console.log("i"+i);
-					for(let u=0; u < arr[i].length; u++) {	
-						console.log("u"+u);
-						console.log(arr[i].substring(u, u+1));
-					}
-				}
-				
-				
-				
-				
-				
-				
-				
-				
-				$(document).on('keydown', event => {
-					let tmp;
-					switch (event.code) {
-						case "ArrowDown":
-							tmp = $('#maus').css('top');
-							$('#maus').css('top', parseInt(tmp) + 10);							
-							break;
-						case "ArrowUp":
-							tmp = $('#maus').css('top');
-							$('#maus').css('top', parseInt(tmp) - 10);
-							break;
-						case "ArrowLeft":
-							tmp = $('#maus').css('left');
-							$('#maus').css('left', parseInt(tmp) - 10);
-							break;
-						case "ArrowRight":
-							tmp = $('#maus').css('left');
-							$('#maus').css('left', parseInt(tmp) + 10);
-							break;
-						default:
-							console.log('wrong key');
-							break;
-					}
-				});
-			});
-			
-			
-		</script>
-		<style>
-			#maus {
-				width: 70px;
-				height: 70px;
-				position: absolute;
-				background: url("maus.png") no-repeat;
-				background-size: contain;
-			}
-		</style>
 	</head>
 	<body>
-		<div id="maus"></div>
 	</body>
 </html>
