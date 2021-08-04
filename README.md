@@ -1,1 +1,1 @@
-# it-camp_gp_08-21
+# IT-Camp August 2021: Game Programming
