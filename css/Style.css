@@ -1,0 +1,25 @@
+
+#div{
+width: 75em;
+height: 50em;
+margin: auto auto;
+display: flex;
+flex-flow: row wrap;
+flex-direction: row-reverse;
+border: 10px solid brown;
+}
+#div>div {
+	width: 2.5em;
+	height: 2.5em;
+	margin: 0;
+}
+.boden {
+	background: white;
+}
+
+.wand {
+	background: black;
+}
+.tuer{
+	background: blue;
+}
