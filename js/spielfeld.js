@@ -1,18 +1,26 @@
 $(function() {
-    let spielfeld = [];
-    const rows = 20;
-    const columns = 30;
 
-    for(let i = 1; i <= rows; i++){
-        for(let u = 1; u <= columns; u++){
+    let level1 = erzeugeSpielfeld(20, 30);
+    zeigeSpielfeld(level1);
+});
+
+function aendereFeld(spielfeld, reihe, spalte, gelaende) {
+    // TODO
+}
+
+function erzeugeSpielfeld(reihe, spalte) {
+    let spielfeld = [];
+
+    for(let i = 1; i <= reihe; i++){
+        for(let u = 1; u <= spalte; u++){
             let feld;
             if((i === 1 && u === 15) || (i === 20 && u === 15)){
                 feld = erzeugeFeld("Tuer", i, u);
-            } else if(i === rows){
+            } else if(i === reihe){
                 feld = erzeugeFeld("Wand_Unten", i, u);
             } else if (i === 1) {
                 feld = erzeugeFeld("Wand_Oben", i, u);
-            } else if (u === columns) {
+            } else if (u === spalte) {
                 feld = erzeugeFeld("Wand_Links", i, u);
             } else if (u === 1) {
                 feld = erzeugeFeld("Wand_Rechts", i, u);
@@ -22,8 +30,9 @@ $(function() {
             spielfeld.push(feld);
         }
     }
-    zeigeSpielfeld(spielfeld);
-    });
+
+    return spielfeld;
+}
 
 function kollidiert(gelaende) {
     let arr = ["Wand_Unten", "Wand_Oben", "Wand_Links", "Wand_Rechts"];
