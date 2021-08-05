@@ -1,37 +1,51 @@
-#spielfeld{
-width: 75em;
-height: 50em;
-margin: auto auto;
-display: flex;
-flex-flow: row wrap;
-flex-direction: row-reverse;
-border: 10px solid black;
+#spielfeld {
+    width: 75em;
+    height: 50em;
+    margin: auto auto;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row-reverse;
+    border: 2px solid white;
 }
+
 #spielfeld > div {
-	width: 2.5em;
-	height: 2.5em;
-	margin: 0;
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
-//Boden
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin: 0em;
+}
+
+/*Boden*/
 .boden {
-	background: white;
+    background-image: url("../pics/boden/Boden.png");
 }
 
-//Wände
+/*Wände*/
 .wand_unten {
-	background: green;
-}
-.wand_oben {
-	background: yellow;
-}
-.wand_rechts {
-	background: black;
-}
-.wand_links {
-	background: grey;
+    background-image: url("../pics/wand/Wand-unten.png");
 }
 
-//Türe
-.tuer{
-	background: blue;
+.wand_oben {
+    background-image: url("../pics/wand/Wand-Vorderansicht.png");
+}
+
+.wand_rechts {
+    background-image: url("../pics/wand/Wand-rechts.png");
+}
+
+.wand_links {
+    background-image: url("../pics/wand/Wand-links.png");
+}
+
+/*Türe*/
+.tuer {
+    background-image: url("../pics/wand/tuer_zu.png");
 }
