@@ -1,14 +1,12 @@
-let level1;
-$(function () {
-    level1 = erzeugeSpielfeld(20, 30);
-    zeigeSpielfeld(level1);
-});
-
 function aendereFeld(spielfeld, reihe, spalte, gelaende) {
-    spielfeld[(reihe - 1) * 30 + spalte - 1].gelaende = gelaende;
+    spielfeld[getFeldNummer(reihe, spalte)].gelaende = gelaende;
     //spielfeld.find(arr => {arr.reihe === reihe && arr.spalte === spalte});
 
     zeigeSpielfeld(spielfeld);
+}
+
+function getFeldNummer(reihe, spalte) {
+    return (reihe - 1) * 30 + spalte - 1;
 }
 
 function erzeugeSpielfeld(reihe, spalte) {
