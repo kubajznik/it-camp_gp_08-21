@@ -34,6 +34,10 @@ function setStartPosition() {
 function checkNextMovement(richtung) {
   switch(richtung) {
     case 'hoch':
+      if(spielfeld[getFeldNummer(player.reihe - 1, player.spalte)] === undefined)  {
+        aktiveSpielfeld += 1;
+        erzeugeSpielfeld(aktiveSpielfeld);
+      }
       if(spielfeld[getFeldNummer(player.reihe - 1, player.spalte)].kollidiert)
       return false;
       break;

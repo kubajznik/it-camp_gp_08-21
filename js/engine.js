@@ -1,12 +1,12 @@
 let spielfeld;
 let Aussehen = 3;
 let player = {};
-let kollisionsarrray = ["wand_unten", "wand_oben", "wand_links", "wand_rechts"];
+let kollisionsarrray = ["wand_unten", "wand_oben", "wand_links", "wand_rechts", "tuer_oben"];
+let aktiveSpielfeld;
 
 $(document).ready(e => {
-    spielfeld = erzeugeSpielfeldEins();
-    zeigeSpielfeld(spielfeld);
-    setStartPosition();
+    spielfeld = erzeugeSpielfeld(1);
+    aktiveSpielfeld = 1;
 
     $('#Start_Button').on('click', event => {
         /*Startet das Spiel*/
