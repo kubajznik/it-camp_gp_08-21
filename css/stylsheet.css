@@ -1,0 +1,16 @@
+.Player {
+  background-image: url("Player.jpeg");
+  width: 50px;
+  height: 77px;
+  position: absolute;
+}
+#Start_Button{
+  width: 20em;
+  height: 10em;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}
+.hide{
+    display: none;
+}
