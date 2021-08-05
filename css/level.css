@@ -12,12 +12,12 @@ border: 10px solid black;
 	height: 2.5em;
 	margin: 0;
 }
-/*Boden*/
+//Boden
 .boden {
 	background: white;
 }
 
-/*Wände*/
+//Wände
 .wand_unten {
 	background: green;
 }
@@ -31,7 +31,7 @@ border: 10px solid black;
 	background: grey;
 }
 
-/*Türe*/
+//Türe
 .tuer{
 	background: blue;
 }
