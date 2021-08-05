@@ -4,6 +4,9 @@ let player = {};
 let kollisionsarrray = ["wand_unten", "wand_oben", "wand_links", "wand_rechts", "tuer_oben"];
 let aktiveSpielfeld;
 
+// Um die Tür aus einem Level heraus zu erlauben, muss man spielfeld[14].kollidiert = false setzen.
+
+
 $(document).ready(e => {
     spielfeld = erzeugeSpielfeld(1);
     aktiveSpielfeld = 1;

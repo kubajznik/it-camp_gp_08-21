@@ -34,6 +34,7 @@ function setStartPosition() {
 function checkNextMovement(richtung) {
   switch(richtung) {
     case 'hoch':
+      // Check um ins nächste Level zu kommen
       if(spielfeld[getFeldNummer(player.reihe - 1, player.spalte)] === undefined)  {
         aktiveSpielfeld += 1;
         erzeugeSpielfeld(aktiveSpielfeld);
