@@ -17,8 +17,10 @@ function erzeugeSpielfeld(reihe, spalte) {
     for (let i = 1; i <= reihe; i++) {
         for (let u = 1; u <= spalte; u++) {
             let feld;
-            if ((i === 1 && u === 15) || (i === 20 && u === 15)) {
-                feld = erzeugeFeld("Tuer", i, u);
+            if (i === 1 && u === 15) {
+                feld = erzeugeFeld("Tuer_Oben", i, u);
+            } else if (i === 20 && u === 15) {
+                feld = erzeugeFeld("Tuer_Unten", i, u);
             } else if (i === reihe) {
                 feld = erzeugeFeld("Wand_Unten", i, u);
             } else if (i === 1) {
@@ -62,6 +64,7 @@ function zeigeSpielfeld(spielfeld) {
         if (e.gelaende === 'Wand_Rechts') $('#spielfeld').append('<div class="wand_rechts">');
         if (e.gelaende === 'Wand_Links') $('#spielfeld').append('<div class="wand_links">');
         if (e.gelaende === 'Boden') $('#spielfeld').append('<div class="boden">');
-        if (e.gelaende === 'Tuer') $('#spielfeld').append('<div class="tuer">');
+        if (e.gelaende === 'Tuer_Oben') $('#spielfeld').append('<div class="tuer_oben">');
+        if (e.gelaende === 'Tuer_Unten') $('#spielfeld').append('<div class="tuer_unten">');
     }
 }

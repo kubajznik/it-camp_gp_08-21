@@ -52,6 +52,6 @@ body {
 }
 
 /*Türe*/
-.tuer {
+.tuer_oben, .tuer_unten {
     background-image: url("../pics/wand/tuer_zu.png");
 }
