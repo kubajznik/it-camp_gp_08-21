@@ -5,7 +5,8 @@ $(function() {
 });
 
 function aendereFeld(spielfeld, reihe, spalte, gelaende) {
-    // TODO
+    spielfeld[(reihe-1)*20+spalte].gelaende = gelaende;
+    zeigeSpielfeld(spielfeld);
 }
 
 function erzeugeSpielfeld(reihe, spalte) {
