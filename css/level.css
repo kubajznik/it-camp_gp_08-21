@@ -1,0 +1,37 @@
+#spielfeld{
+width: 75em;
+height: 50em;
+margin: auto auto;
+display: flex;
+flex-flow: row wrap;
+flex-direction: row-reverse;
+border: 10px solid black;
+}
+#spielfeld > div {
+	width: 2.5em;
+	height: 2.5em;
+	margin: 0;
+}
+//Boden
+.boden {
+	background: white;
+}
+
+//Wände
+.wand_unten {
+	background: green;
+}
+.wand_oben {
+	background: yellow;
+}
+.wand_rechts {
+	background: black;
+}
+.wand_links {
+	background: grey;
+}
+
+//Türe
+.tuer{
+	background: blue;
+}
