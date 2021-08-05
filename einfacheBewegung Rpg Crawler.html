@@ -3,48 +3,14 @@
 <head>
 
 <script type='text/javascript' src='https://code.jquery.com/jquery-3.5.1.js'></script>
-		<script type="text/javascript" src="schachbrett.js"></script>
+		<script type="text/javascript" src="js/javascript.js"></script>
 
-<link href="steuerung.js"/>
-
-
-
-
-
-
-<script>$(document).on("keydown keyup", function(e) {
-
-        // Up, Down, Right, Left = WASD + Arrow keys
-    var up = e.keyCode == 38 || e.keyCode == 87,
-        right = e.keyCode == 39  || e.keyCode == 68,
-        down = e.keyCode == 40 || e.keyCode == 83,
-        left = e.keyCode == 37 || e.keyCode == 65,
-        direction = up || down ? 'top' : 'left',
-        move = up || left ? '-=' : '+=',
-        ani = {};
-    
-    if ( up || right || down || left ) {
-        
-        if ( e.type === 'keydown' ) {
-
-                ani[ direction ] = move + '10px';
-                $('div').stop().animate( ani, 50 );
-
-        }
-
-    }
-    
-});
-    </script>
-
-
-
-
+<link rel="stylesheet" href="css/stylsheet.css"/>
 </head>
 <body>
 
 
-<div>bewegen mit WASD</div>
+<div id='Player'>bewegen mit WASD</div>
 
 
 <style>
