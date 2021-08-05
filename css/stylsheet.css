@@ -1,0 +1,46 @@
+#Player {
+  background-image: url("Frau.png");
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#Start_Button {
+  width: 20em;
+  height: 10em;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+#Charakter2 {
+  background-image: url("Mann.png");
+  width: 5em;
+  height: 5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#Charakter3 {
+  background-image: url("Prinz.png");
+  width: 5em;
+  height: 5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#Charakter4 {
+  background-image: url("Prinzessin.png");
+  width: 5em;
+  height: 5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
