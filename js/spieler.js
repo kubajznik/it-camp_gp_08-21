@@ -1,4 +1,4 @@
-function Aussehenaendern() {
+function aussehenAendern() {
   $('.Charaktere').toggleClass('hide');
   switch (Aussehen) {
     case 0:

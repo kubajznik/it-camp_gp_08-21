@@ -1,9 +1,10 @@
 let spielfeld;
 let Aussehen = 3;
 let player = {};
+let kollisionsarrray = ["wand_unten", "wand_oben", "wand_links", "wand_rechts"];
 
 $(document).ready(e => {
-    spielfeld = erzeugeSpielfeld(20, 30);
+    spielfeld = erzeugeSpielfeldEins();
     zeigeSpielfeld(spielfeld);
     setStartPosition();
 
@@ -15,19 +16,19 @@ $(document).ready(e => {
         $('.Charaktere').toggleClass('hide');
         $('#Player').on('click', envent => {
             Aussehen = 0;
-            Aussehenaendern()
+            aussehenAendern()
         });
         $('#Charakter2').on('click', envent => {
             Aussehen = 1;
-            Aussehenaendern()
+            aussehenAendern()
         });
         $('#Charakter3').on('click', envent => {
             Aussehen = 2;
-            Aussehenaendern()
+            aussehenAendern()
         });
         $('#Charakter4').on('click', envent => {
             Aussehen = 3;
-            Aussehenaendern()
+            aussehenAendern()
         });
         console.log(Aussehen);
     });
@@ -72,6 +73,5 @@ $(document).ready(e => {
                 console.log('wrong key');
                 break;
         }
-        console.log(player);
     });
 });
