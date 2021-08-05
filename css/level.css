@@ -4,7 +4,6 @@
     margin: auto auto;
     display: flex;
     flex-flow: row wrap;
-    flex-direction: row-reverse;
     border: 2px solid white;
 }
 
@@ -21,6 +20,13 @@ body {
     width: 100vw;
     display: flex;
     margin: 0em;
+}
+
+#Player {
+    background: green;
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
 }
 
 /*Boden*/
