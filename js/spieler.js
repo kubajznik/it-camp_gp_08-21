@@ -59,4 +59,65 @@ function checkNextMovement(richtung) {
 
 }
 
+function bewegeSpieler(event) {
+  switch (event.code) {
+    case "ArrowDown":
+    case "KeyS":
+      if(checkNextMovement('runter')) {
+        tmp = $('#Player').css('top');
+        $('#Player').css('top', parseInt(tmp) + 40);
+        player.reihe += 1;
+      }
+      break;
+    case "ArrowUp":
+    case "KeyW":
+      if(checkNextMovement('hoch')) {
+        tmp = $('#Player').css('top');
+        $('#Player').css('top', parseInt(tmp) - 40);
+        player.reihe -= 1;
+      }
+      break;
+    case "ArrowLeft":
+    case "KeyA":
+      if(checkNextMovement('links')) {
+        tmp = $('#Player').css('left');
+        $('#Player').css('left', parseInt(tmp) - 40);
+        player.spalte -= 1;
+      }
+      break;
+    case "ArrowRight":
+    case "KeyD":
+      if(checkNextMovement('rechts')) {
+        tmp = $('#Player').css('left');
+        $('#Player').css('left', parseInt(tmp) + 40);
+        player.spalte += 1;
+      }
+      break;
+    default:
+      console.log('wrong key');
+      break;
+  }
+}
+
+function aendereAussehen() {
+  $('.Charaktere').toggleClass('hide');
+  $('#Player').on('click', event => {
+    Aussehen = 0;
+    aussehenAendern()
+  });
+  $('#Charakter2').on('click', event => {
+    Aussehen = 1;
+    aussehenAendern()
+  });
+  $('#Charakter3').on('click', event => {
+    Aussehen = 2;
+    aussehenAendern()
+  });
+  $('#Charakter4').on('click', event => {
+    Aussehen = 3;
+    aussehenAendern()
+  });
+  console.log(Aussehen);
+}
+
 

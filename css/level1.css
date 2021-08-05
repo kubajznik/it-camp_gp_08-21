@@ -22,13 +22,6 @@ body {
     margin: 0em;
 }
 
-#Player {
-    background: green;
-    position: absolute;
-    width: 2.5em;
-    height: 2.5em;
-}
-
 /*Boden*/
 .boden {
     background-image: url("../pics/boden/Boden.png");

@@ -1,0 +1,6 @@
+#Player {
+    background: url('../pics/Character/prinzessin.png');
+    position: absolute;
+    width: 2.5em;
+    height: 2.5em;
+}
