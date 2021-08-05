@@ -1,37 +1,49 @@
 #spielfeld{
-width: 75em;
-height: 50em;
-margin: auto auto;
-display: flex;
-flex-flow: row wrap;
-flex-direction: row-reverse;
-border: 10px solid black;
+    width: 75em;
+    height: 50em;
+    margin: auto auto;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row-reverse;
+    border: 2px solid white;
 }
 #spielfeld > div {
 	width: 2.5em;
 	height: 2.5em;
 	margin: 0;
 }
-//Boden
+/*Boden*/
 .boden {
-	background: white;
+	background-image: url("../pics/boden/Boden.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-//Wände
+/*Wände*/
 .wand_unten {
-	background: green;
+	background-image: url("../pics/wand/Wand-unten.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .wand_oben {
-	background: yellow;
+	background-image: url("../pics/wand/Wand-Vorderansicht.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .wand_rechts {
-	background: black;
+	background-image: url("../pics/wand/Wand-rechts.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .wand_links {
-	background: grey;
+	background-image: url("../pics/wand/Wand-links.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-//Türe
-.tuer{
-	background: blue;
+/*Türe*/
+.tuer {
+	background-image: url("../pics/wand/tuer_zu.png");
+    background-repeat: no-repeat;
+    background-size: contain;
 }
