@@ -7,6 +7,7 @@ $(function() {
 function aendereFeld(spielfeld, reihe, spalte, gelaende) {
     spielfeld[(reihe-1)*20+spalte].gelaende = gelaende;
     //spielfeld.find(arr => {arr.reihe === reihe && arr.spalte === spalte});
+    console.log();
     zeigeSpielfeld(spielfeld);
 }
 
