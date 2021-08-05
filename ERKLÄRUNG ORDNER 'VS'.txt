@@ -1,0 +1,2 @@
+Die Dateien im Ordner 'VS' sind zum ändern vom Spielfeld via button gedacht.
+Zusätzliche Dateien sind zum Testen des Codes. 
