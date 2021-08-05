@@ -36,7 +36,7 @@ function erzeugeFeld(gelaende, reihe, spalte) {
         reihe: reihe,
         spalte: spalte,
         besetzt: 0,
-        kollidiert: kollidiert(gelaende);
+        kollidiert: kollidiert(gelaende)
     }
 }
 
