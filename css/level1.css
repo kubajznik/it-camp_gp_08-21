@@ -53,3 +53,6 @@ body {
 .Druckplatte {
 	background-image: url("../pics/boden/BodenDruckplatte.png");
 }
+.wand {
+    background-image: url("../pics/wand/Wand.png");
+}
