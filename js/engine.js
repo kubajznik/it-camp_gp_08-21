@@ -1,19 +1,21 @@
 let spielfeld;
 let Aussehen = 3;
 let player = {};
-let kollisionsarrray = ["wand_unten", "wand_oben", "wand_links", "wand_rechts", "tuer_oben"];
+let kollisionsarrray = ["wand_unten", "wand_oben", "wand_links", "wand_rechts", "tuer_oben", "Wand"];
 let aktivesSpielfeld;
 
 // Um die Tür aus einem Level heraus zu erlauben, muss man spielfeld[14].kollidiert = false setzen.
 
 
 $(document).ready(e => {
-    aktivesSpielfeld = 1;
-    spielfeld = erzeugeSpielfeld(aktivesSpielfeld);
 
+    $('#spielfeld').hide();
     $('#Start_Button').on('click', event => {
-        /*Startet das Spiel*/
-    });
+      $('#Startbildschirm').remove();
+      $('#spielfeld').show();
+      aktivesSpielfeld = 1;
+      spielfeld = erzeugeSpielfeld(aktivesSpielfeld);
+});
 
     $('#Player').on('click', event => {
         aendereAussehen();
@@ -24,4 +26,6 @@ $(document).ready(e => {
         bewegeSpieler(event);
 		interaktionenLaden();
     });
+
 });
+	

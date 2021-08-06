@@ -1,0 +1,65 @@
+#spielfeld {
+    width: 75em;
+    height: 50em;
+    margin: auto auto;
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid white;
+}
+
+#spielfeld > div {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin: 0em;
+}
+.boden {
+    background-image: url("../pics/boden/Boden.png");
+}
+.tuer_oben, .tuer_unten {
+    background-image: url("../pics/wand/tuer_zu.png");
+}
+
+.wand_unten {
+    background-image: url("../pics/wand/Wand-unten.png");
+}
+
+.wand_oben {
+    background-image: url("../pics/wand/Wand-Vorderansicht.png");
+}
+
+.wand_rechts {
+    background-image: url("../pics/wand/Wand-rechts.png");
+}
+
+.wand_links {
+    background-image: url("../pics/wand/Wand-links.png");
+}
+
+.axt{
+    background-image: url("../pics/Props/Axt.png");
+}
+
+.bruecke{
+    background-image: url("../pics/boden/Bruecke.png");
+}
+
+.kiste{
+    background-image: url("../pics/Props/FassBoden.png")
+}
+
+.fluss{
+    background-image: url("../pics/boden/Wasser.png");
+}
+
+.druckPlatte{
+    background-image: url("../pics/Props/Druckplatte.png")
+}

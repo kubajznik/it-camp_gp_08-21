@@ -12,7 +12,8 @@ function erzeugeSpielfeld(nummer) {
 
     switch(nummer) {
         case 1:
-		
+         aendereFeld(spielfeld, 11, 15, 'Druckplatte');
+	
             break;
         case 2:
             aendereFeld(spielfeld, 6, 15, 'kompass_n');
@@ -24,11 +25,20 @@ function erzeugeSpielfeld(nummer) {
 			aendereFeld(spielfeld, 5, 20, 'fackel2_aus');
 			aendereFeld(spielfeld, 15, 20, 'fackel3_aus');
 			aendereFeld(spielfeld, 15, 10, 'fackel4_aus');
-            break;
-        case 3:
 
             break;
-        case 4:
+        case 3:
+            aendereFeld(spielfeld, 19, 29, 'axt');
+            aendereFeld(spielfeld, 19, 2, 'kiste');
+            aendereFeld(spielfeld, 19, 2, 'druckPlatte');
+            for(let i=1; i<31; i++){
+            aendereFeld(spielfeld, 12, i, 'fluss');
+            }
+            break;
+        case 4:for(let i = 2; i <= 25; i++) {
+            aendereFeld(spielfeld, 10, i, "wand");
+			kollisionsarrray.push("wand");
+		}
 
             break;
         case 5:
