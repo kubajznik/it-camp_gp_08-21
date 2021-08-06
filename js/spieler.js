@@ -121,5 +121,5 @@ function aendereAussehen() {
 }
 
 function spielerAufFeld(feld) {
-  return feld.position().top === $('#Player').position().top && feld.position().left === $('#Player').position().left;
+  return Math.floor(feld.position().top) === Math.floor($('#Player').position().top) && Math.floor(feld.position().left) === Math.floor($('#Player').position().left);
 }
