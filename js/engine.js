@@ -13,7 +13,6 @@ $(document).ready(e => {
     $('#Start_Button').on('click', event => {
       $('#Startbildschirm').remove();
       $('#spielfeld').show();
-      console.log('Start 42');
       aktivesSpielfeld = 1;
       spielfeld = erzeugeSpielfeld(aktivesSpielfeld);
 });
