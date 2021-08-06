@@ -69,4 +69,5 @@ function erzeugeGrundSpielfeld() {
 
 function tuerOeffnet() {
     $(".tuer_oben").css("background-image", "url('./pics/Wand/TuerOffen.png')");
+    spielfeld[14].kollidiert = false;
 }
