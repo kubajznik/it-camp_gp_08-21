@@ -38,7 +38,15 @@ function erzeugeGrundSpielfeld() {
     for (let i = 1; i <= reihe; i++) {
         for (let u = 1; u <= spalte; u++) {
             let feld;
-            if (i === 1 && u === 15) {
+            if (i == 1 && u == 1) {
+                feld = erzeugeFeld("wand_oben_links", i, u);
+            } else if(i == 1 && u == spalte) {
+                feld = erzeugeFeld("wand_oben_rechts", u);
+            } else if(i == reihe && u == spalte) {
+                feld = erzeugeFeld("wand_unten_rechts", i, u);
+            } else if(i == reihe && u == 1) {
+                feld = erzeugeFeld("wand_unten_links", i, u);
+            } else if (i === 1 && u === 15) {
                 feld = erzeugeFeld("tuer_oben", i, u);
             } else if (i === 20 && u === 15) {
                 feld = erzeugeFeld("tuer_unten", i, u);
