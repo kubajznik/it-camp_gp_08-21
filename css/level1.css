@@ -24,9 +24,21 @@ body {
 
 #Erklaerung {
 		margin: auto auto;
-		color: #FFF;
-		background-color: #232323;
-		text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+		color: #FFFFFF;
+		border: 4px inset #1C6EA4;
+		-webkit-box-shadow: 8px 5px 16px 6px rgba(0,0,0,0.95); 
+		box-shadow: 8px 5px 16px 6px rgba(0,0,0,0.95);
+		font-family: "Arial Black", Gadget, sans-serif;
+		font-size: 16px;
+		letter-spacing: 2px;
+		word-spacing: 2px;
+		color: #000000;
+		font-weight: 400;
+		text-decoration: none;
+		font-style: normal;
+		font-variant: normal;
+		text-transform: none;
+		background-color:grey;
 		
 }
 
