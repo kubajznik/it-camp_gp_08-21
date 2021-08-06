@@ -3,7 +3,7 @@ min-width: 1080px;
 }
 
 #Startbildschirm {
-  background-image: url("Startbild.png");
+  background-image: url("../pics/Startbild.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
@@ -16,7 +16,7 @@ min-width: 1080px;
 }
 
 #Player {
-  background-image: url("Frau.png");
+  background-image: url("../pics/Character/frau.png");
   position: absolute;
   width: 5em;
   height: 5em;
@@ -32,7 +32,7 @@ min-width: 1080px;
   position: absolute;
   top: 57%;
   left: 43%;
-  background-image: url("Start_Button.png");
+  background-image: url("../pics/Start_Button.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -42,7 +42,7 @@ min-width: 1080px;
 }
 
 #Charakter2 {
-  background-image: url("Mann.png");
+  background-image: url("../pics/Character/mann.png");
   width: 5em;
   height: 5em;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@ min-width: 1080px;
 }
 
 #Charakter3 {
-  background-image: url("Prinz.png");
+  background-image: url("../pics/Character/prinz.png");
   width: 5em;
   height: 5em;
   background-repeat: no-repeat;
@@ -58,7 +58,7 @@ min-width: 1080px;
 }
 
 #Charakter4 {
-  background-image: url("Prinzessin.png");
+  background-image: url("../pics/Character/prinzessin.png");
   width: 5em;
   height: 5em;
   background-repeat: no-repeat;
