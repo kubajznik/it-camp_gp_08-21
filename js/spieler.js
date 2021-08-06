@@ -2,19 +2,19 @@ function aussehenAendern() {
   $('.Charaktere').toggleClass('hide');
   switch (Aussehen) {
     case 0:
-      $('#Player').css('background-image', 'url("./css/Frau.png")');
+      $('#Player').css('background-image', 'url("../pics/Character/frau.png")');
       console.log($('#Player').css('background-image'));
       break;
     case 1:
-      $('#Player').css('background-image', 'url("./css/Mann.png")');
+      $('#Player').css('background-image', 'url("../pics/Character/mann.png")');
       console.log($('#Player').css('background-image'))
       break;
     case 2:
-      $('#Player').css('background-image', 'url("./css/Prinz.png")');
+      $('#Player').css('background-image', 'url("../pics/Character/prinz.png")');
       console.log($('#Player').css('background-image'))
       break;
     case 3:
-      $('#Player').css('background-image', 'url("./css/Prinzessin.png")');
+      $('#Player').css('background-image', 'url("../pics/Character/prinzessin.png")');
       console.log($('#Player').css('background-image'))
       break;
     default:
