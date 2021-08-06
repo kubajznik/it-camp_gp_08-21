@@ -11,10 +11,7 @@ function erzeugeSpielfeld(nummer) {
      */
 
     switch(nummer) {
-        case 1:for(let i = 2; i <= 25; i++) {
-            aendereFeld(spielfeld, 10, i, "wand");
-			kollisionsarrray.push("wand");
-		}
+        case 1:
 		
             break;
         case 2:
@@ -23,8 +20,9 @@ function erzeugeSpielfeld(nummer) {
         case 3:
 
             break;
-        case 4:for(let i = 2; i <= 27; i++) {
+        case 4:for(let i = 2; i <= 25; i++) {
             aendereFeld(spielfeld, 10, i, "wand");
+			kollisionsarrray.push("wand");
 		}
 
             break;
