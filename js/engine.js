@@ -8,12 +8,13 @@ let aktivesSpielfeld;
 
 
 $(document).ready(e => {
-    aktivesSpielfeld = 1;
-    spielfeld = erzeugeSpielfeld(aktivesSpielfeld);
 
     $('#Start_Button').on('click', event => {
-        /*Startet das Spiel*/
-    });
+      //('#Startbildschirm').toggleClass('hide');
+      console.log('Start 42');
+      aktivesSpielfeld = 1;
+      spielfeld = erzeugeSpielfeld(aktivesSpielfeld);
+});
 
     $('#Player').on('click', event => {
         aendereAussehen();

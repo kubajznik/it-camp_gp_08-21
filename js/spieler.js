@@ -119,5 +119,3 @@ function aendereAussehen() {
   });
   console.log(Aussehen);
 }
-
-

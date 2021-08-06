@@ -5,6 +5,7 @@
     display: flex;
     flex-flow: row wrap;
     border: 2px solid white;
+    z-index: 0;
 }
 
 #spielfeld > div {

@@ -1,10 +1,12 @@
-body{
-background-image:url("Startbild.png");
-background-size: contain;
-background-repeat: no-repeat;
-width: 100em;
-height: 66em;
+#Startbildschirm {
+  background-image: url("Startbild.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
 }
+
 #Player {
   background-image: url("Frau.png");
   position: absolute;
@@ -12,8 +14,8 @@ height: 66em;
   height: 5em;
   background-repeat: no-repeat;
   background-size: contain;
-  top:70%;
-  left:50%;
+  top: 70%;
+  left: 50%;
 }
 
 #Start_Button {
@@ -26,11 +28,10 @@ height: 66em;
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .hide {
   display: none;
 }
-
-
 
 #Charakter2 {
   background-image: url("Mann.png");

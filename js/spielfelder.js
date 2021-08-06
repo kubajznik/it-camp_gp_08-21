@@ -15,7 +15,7 @@ function erzeugeSpielfeld(nummer) {
             aendereFeld(spielfeld, 10, 10, 'tuer_oben');
             break;
         case 2:
-            
+
             break;
         case 3:
 
