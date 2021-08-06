@@ -12,13 +12,18 @@ function erzeugeSpielfeld(nummer) {
 
     switch(nummer) {
         case 1:
-            aendereFeld(spielfeld, 10, 10, 'tuer_oben');
-            break;
-        case 2:
             
             break;
-        case 3:
+        case 2:
 
+            break;
+        case 3:
+            aendereFeld(spielfeld, 19, 29, 'axt');
+            aendereFeld(spielfeld, 19, 2, 'kiste');
+            aendereFeld(spielfeld, 19, 2, 'druckPlatte');
+            for(let i=1; i<31; i++){
+            aendereFeld(spielfeld, 12, i, 'fluss');
+            }
             break;
         case 4:
 
