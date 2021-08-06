@@ -5,7 +5,6 @@
     display: flex;
     flex-flow: row wrap;
     border: 2px solid white;
-    z-index: 0;
 }
 
 #spielfeld > div {
@@ -22,33 +21,13 @@ body {
     display: flex;
     margin: 0em;
 }
-
-#Erklaerung {
-		margin: auto auto;
-		color: #FFFFFF;
-		border: 4px inset #1C6EA4;
-		-webkit-box-shadow: 8px 5px 16px 6px rgba(0,0,0,0.95); 
-		box-shadow: 8px 5px 16px 6px rgba(0,0,0,0.95);
-		font-family: "Arial Black", Gadget, sans-serif;
-		font-size: 16px;
-		letter-spacing: 2px;
-		word-spacing: 2px;
-		color: #000000;
-		font-weight: 400;
-		text-decoration: none;
-		font-style: normal;
-		font-variant: normal;
-		text-transform: none;
-		background-color:grey;
-		
-}
-
-/*Boden*/
 .boden {
     background-image: url("../pics/boden/Boden.png");
 }
+.tuer_oben, .tuer_unten {
+    background-image: url("../pics/wand/tuer_zu.png");
+}
 
-/*Wände*/
 .wand_unten {
     background-image: url("../pics/wand/Wand-unten.png");
 }
@@ -65,12 +44,22 @@ body {
     background-image: url("../pics/wand/Wand-links.png");
 }
 
-/*Türe*/
-.tuer_oben, .tuer_unten {
-    background-image: url("../pics/wand/tuer_zu.png");
+.axt{
+    background-image: url("../pics/Props/Axt.png");
 }
 
-/*Props*/
-.Druckplatte {
-	background-image: url("../pics/boden/BodenDruckplatte.png");
+.bruecke{
+    background-image: url("../pics/boden/Bruecke.png");
+}
+
+.kiste{
+    background-image: url("../pics/Props/FassBoden.png")
+}
+
+.fluss{
+    background-image: url("../pics/boden/Wasser.png");
+}
+
+.druckPlatte{
+    background-image: url("../pics/Props/Druckplatte.png")
 }
