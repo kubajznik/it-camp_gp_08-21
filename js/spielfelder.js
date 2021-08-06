@@ -12,10 +12,10 @@ function erzeugeSpielfeld(nummer) {
 
     switch(nummer) {
         case 1:
-
+            aendereFeld(spielfeld, 10, 10, 'tuer_oben');
             break;
         case 2:
-            aendereFeld(spielfeld, 10, 10, 'tuer_oben');
+            
             break;
         case 3:
 
