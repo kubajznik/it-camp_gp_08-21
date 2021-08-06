@@ -23,4 +23,5 @@ $(document).ready(e => {
     $(document).on('keydown', event => {
         bewegeSpieler(event);
     });
+	
 });

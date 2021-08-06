@@ -12,7 +12,7 @@ function erzeugeSpielfeld(nummer) {
 
     switch(nummer) {
         case 1:
-            aendereFeld(spielfeld, 10, 10, 'tuer_oben');
+            aendereFeld(spielfeld, 11, 15, 'Druckplatte');
             break;
         case 2:
             
