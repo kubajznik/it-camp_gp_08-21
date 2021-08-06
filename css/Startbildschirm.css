@@ -1,0 +1,66 @@
+body {
+min-width: 1080px;
+}
+
+#Startbildschirm {
+  background-image: url("../pics/Startbild.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+#Erklaerung {
+  width: 40%;
+}
+
+#Player {
+  background-image: url("../pics/Character/frau.png");
+  position: absolute;
+  width: 5em;
+  height: 5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: 70%;
+  left: 50%;
+}
+
+#Start_Button {
+  width: 20em;
+  height: 10em;
+  position: absolute;
+  top: 57%;
+  left: 43%;
+  background-image: url("../pics/Start_Button.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hide {
+  display: none;
+}
+
+#Charakter2 {
+  background-image: url("../pics/Character/mann.png");
+  width: 5em;
+  height: 5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#Charakter3 {
+  background-image: url("../pics/Character/prinz.png");
+  width: 5em;
+  height: 5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#Charakter4 {
+  background-image: url("../pics/Character/prinzessin.png");
+  width: 5em;
+  height: 5em;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

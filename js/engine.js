@@ -8,12 +8,14 @@ let aktivesSpielfeld;
 
 
 $(document).ready(e => {
-    aktivesSpielfeld = 1;
-    spielfeld = erzeugeSpielfeld(aktivesSpielfeld);
 
+    $('#spielfeld').hide();
     $('#Start_Button').on('click', event => {
-        /*Startet das Spiel*/
-    });
+      $('#Startbildschirm').remove();
+      $('#spielfeld').show();
+      aktivesSpielfeld = 1;
+      spielfeld = erzeugeSpielfeld(aktivesSpielfeld);
+});
 
     $('#Player').on('click', event => {
         aendereAussehen();
@@ -22,5 +24,8 @@ $(document).ready(e => {
     // Bewegung des Spielers
     $(document).on('keydown', event => {
         bewegeSpieler(event);
+		interaktionenLaden();
     });
+
 });
+	

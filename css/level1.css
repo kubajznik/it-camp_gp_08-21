@@ -5,6 +5,7 @@
     display: flex;
     flex-flow: row wrap;
     border: 2px solid white;
+    z-index: 0;
 }
 
 #spielfeld > div {
@@ -20,6 +21,26 @@ body {
     width: 100vw;
     display: flex;
     margin: 0em;
+}
+
+#Erklaerung {
+		margin: auto auto;
+		color: #FFFFFF;
+		border: 4px inset #1C6EA4;
+		-webkit-box-shadow: 8px 5px 16px 6px rgba(0,0,0,0.95); 
+		box-shadow: 8px 5px 16px 6px rgba(0,0,0,0.95);
+		font-family: "Arial Black", Gadget, sans-serif;
+		font-size: 16px;
+		letter-spacing: 2px;
+		word-spacing: 2px;
+		color: #000000;
+		font-weight: 400;
+		text-decoration: none;
+		font-style: normal;
+		font-variant: normal;
+		text-transform: none;
+		background-color:grey;
+		
 }
 
 /*Boden*/
@@ -46,7 +67,31 @@ body {
     background-image: url("../pics/wand/Wand-links.png");
 }
 
+.wand_oben_rechts {
+    background-image: url("../pics/wand/Wand-Ecke.png");
+    transform: rotate(90deg);
+}
+
+.wand_oben_links {
+    background-image: url("../pics/wand/Wand-Ecke.png");
+}
+
+.wand_unten_rechts {
+    background-image: url("../pics/wand/Wand-Ecke.png");
+    transform: rotate(180deg);
+}
+
+.wand_unten_links {
+    background-image: url("../pics/wand/Wand-Ecke.png");
+    transform: rotate(270deg);
+}
+
 /*Türe*/
 .tuer_oben, .tuer_unten {
     background-image: url("../pics/wand/tuer_zu.png");
+}
+
+/*Props*/
+.Druckplatte {
+	background-image: url("../pics/boden/BodenDruckplatte.png");
 }
