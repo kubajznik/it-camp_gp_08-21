@@ -36,8 +36,8 @@ function checkNextMovement(richtung) {
     case 'hoch':
       // Check um ins nächste Level zu kommen
       if(spielfeld[getFeldNummer(player.reihe - 1, player.spalte)] === undefined)  {
-        aktiveSpielfeld += 1;
-        erzeugeSpielfeld(aktiveSpielfeld);
+        aktivesSpielfeld += 1;
+        erzeugeSpielfeld(aktivesSpielfeld);
       }
       if(spielfeld[getFeldNummer(player.reihe - 1, player.spalte)].kollidiert)
       return false;
