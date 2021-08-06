@@ -8,8 +8,8 @@ let aktiveSpielfeld;
 
 
 $(document).ready(e => {
-    spielfeld = erzeugeSpielfeld(1);
-    aktiveSpielfeld = 1;
+    aktivesSpielfeld = 1;
+    spielfeld = erzeugeSpielfeld(aktivesSpielfeld);
 
     $('#Start_Button').on('click', event => {
         /*Startet das Spiel*/

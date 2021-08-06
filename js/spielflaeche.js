@@ -1,5 +1,5 @@
 function aendereFeld(spielfeld, reihe, spalte, gelaende) {
-    spielfeld[getFeldNummer(reihe, spalte)].gelaende = gelaende;
+    spielfeld[getFeldNummer(reihe, spalte)] = erzeugeFeld(gelaende, reihe, spalte);
     zeigeSpielfeld(spielfeld);
 }
 

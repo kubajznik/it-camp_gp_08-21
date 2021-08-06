@@ -1,5 +1,5 @@
 function erzeugeSpielfeld(nummer) {
-    let spielfeld = erzeugeGrundSpielfeld();
+    spielfeld = erzeugeGrundSpielfeld();
 
     /*  So kann man neue Kollisionsblöcke hinzufügen
      *  kollisionsarrray.push('Neue_Wand');
