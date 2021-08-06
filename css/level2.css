@@ -1,0 +1,84 @@
+#spielfeld {
+    width: 75em;
+    height: 50em;
+    margin: auto auto;
+    display: flex;
+    flex-flow: row wrap;
+    border: 2px solid white;
+}
+
+#spielfeld > div {
+    width: 2.5em;
+    height: 2.5em;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    margin: 0em;
+}
+
+/*Boden*/
+.boden {
+    background-image: url("../pics/boden/Boden.png");
+}
+
+/*Wände*/
+.wand_unten {
+    background-image: url("../pics/wand/Wand-unten.png");
+}
+
+.wand_oben {
+    background-image: url("../pics/wand/Wand-Vorderansicht.png");
+}
+
+.wand_rechts {
+    background-image: url("../pics/wand/Wand-rechts.png");
+}
+
+.wand_links {
+    background-image: url("../pics/wand/Wand-links.png");
+}
+
+/*Türe*/
+.tuer_oben, .tuer_unten {
+    background-image: url("../pics/wand/tuer_zu.png");
+}
+
+/*Fackeln*/
+.fackel1_aus{
+	background-image: url("../pics/Props/Fackel_aus.png.png");
+}
+
+.fackel2_aus{
+	background-image: url("../pics/Props/Fackel_aus.png.png");
+}
+
+.fackel3_aus{
+	background-image: url("../pics/Props/Fackel_aus.png.png");
+}
+
+.fackel4_aus{
+	background-image: url("../pics/Props/Fackel_aus.png.png");
+}
+
+/*Kompass*/
+.kompass_n{
+	background-image: url("../pics/boden/pixil-frame-0 (22).png");
+}
+
+.kompass_o{
+	background-image: url("../pics/boden/pixil-frame-0 (23).png");
+}
+
+.kompass_s{
+	background-image: url("../pics/boden/pixil-frame-0 (24).png");
+}
+
+.kompass_w{
+	background-image: url("../pics/boden/pixil-frame-0 (25).png");
+}
