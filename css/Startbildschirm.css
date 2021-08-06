@@ -1,3 +1,7 @@
+body {
+min-width: 1080px;
+}
+
 #Startbildschirm {
   background-image: url("Startbild.png");
   background-size: contain;
