@@ -48,3 +48,8 @@ body {
 .tuer_oben, .tuer_unten {
     background-image: url("../pics/wand/tuer_zu.png");
 }
+
+/*Props*/
+.Druckplatte {
+	background-image: url("../pics/boden/BodenDruckplatte.png");
+}
