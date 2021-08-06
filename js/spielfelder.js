@@ -13,6 +13,7 @@ function erzeugeSpielfeld(nummer) {
     switch(nummer) {
         case 1:
             aendereFeld(spielfeld, 11, 15, 'Druckplatte');
+
             break;
         case 2:
 
@@ -25,7 +26,10 @@ function erzeugeSpielfeld(nummer) {
             aendereFeld(spielfeld, 12, i, 'fluss');
             }
             break;
-        case 4:
+        case 4:for(let i = 2; i <= 25; i++) {
+            aendereFeld(spielfeld, 10, i, "wand");
+			kollisionsarrray.push("wand");
+		}
 
             break;
         case 5:
