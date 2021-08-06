@@ -12,24 +12,56 @@ function erzeugeSpielfeld(nummer) {
 
     switch(nummer) {
         case 1:
-            aendereFeld(spielfeld, 11, 15, 'Druckplatte');
+            
+           
+           
+
+
 
             break;
         case 2:
-
+            
             break;
         case 3:
-            aendereFeld(spielfeld, 19, 29, 'axt');
-            aendereFeld(spielfeld, 19, 2, 'kiste');
-            aendereFeld(spielfeld, 19, 2, 'druckPlatte');
-            for(let i=1; i<31; i++){
-            aendereFeld(spielfeld, 12, i, 'fluss');
-            }
+
             break;
-        case 4:for(let i = 2; i <= 25; i++) {
-            aendereFeld(spielfeld, 10, i, "wand");
-			kollisionsarrray.push("wand");
-		}
+        case 4:
+            
+            kollisionsarrray.push('wand');
+            kollisionsarrray.push('fackel');
+            aendereFeld(spielfeld, 19, 8, 'wand' ) 
+           aendereFeld(spielfeld, 19, 7, 'wand' )
+           aendereFeld(spielfeld, 18, 8, 'wand' )
+           aendereFeld(spielfeld, 18, 7, 'wand' )
+           aendereFeld(spielfeld, 17, 8, 'wand' )
+           aendereFeld(spielfeld, 17, 7, 'wand' )
+           aendereFeld(spielfeld, 16, 8, 'wand' )
+           aendereFeld(spielfeld, 16, 7, 'wand' )
+           aendereFeld(spielfeld, 16, 9, 'wand' )
+           aendereFeld(spielfeld, 16, 10, 'wand' )
+           aendereFeld(spielfeld, 16, 11, 'wand' )
+           aendereFeld(spielfeld, 16, 12, 'wand' )
+           aendereFeld(spielfeld, 16, 13, 'wand' )
+           aendereFeld(spielfeld, 16, 14, 'wand' )
+           aendereFeld(spielfeld, 16, 15, 'wand' )
+           aendereFeld(spielfeld, 16, 16, 'wand' )
+           aendereFeld(spielfeld, 16, 17, 'wand' )
+           aendereFeld(spielfeld, 16, 18, 'wand' )
+           aendereFeld(spielfeld, 16, 19, 'wand' )
+           aendereFeld(spielfeld, 16, 20, 'wand' )
+           aendereFeld(spielfeld, 16, 21, 'wand' )
+           aendereFeld(spielfeld, 16, 22, 'wand' )
+           aendereFeld(spielfeld, 16, 23, 'wand' )
+           aendereFeld(spielfeld, 16, 24, 'wand' )
+           aendereFeld(spielfeld, 16, 25, 'wand' )
+           aendereFeld(spielfeld, 16, 26, 'fackel')
+           aendereFeld(spielfeld, 16, 29, 'fackel')
+           aendereFeld(spielfeld, 2, 2, 'fackel')
+           aendereFeld(spielfeld, 2,29, 'fackel')
+           aendereFeld(spielfeld, 19, 2, 'fackel')
+           aendereFeld(spielfeld, 19, 29, 'fackel')
+         
+
 
             break;
         case 5:
