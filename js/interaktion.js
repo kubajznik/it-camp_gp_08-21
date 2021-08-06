@@ -1,4 +1,7 @@
 
 function interaktionenLaden() {
-		on.
+		if (spielerAufFeld($(".Druckplatte"))) {
+			spielfeld[14].kollidiert = false;
+			alert("----Eine Tür hat sich geöffnet.----")
+		}
 };

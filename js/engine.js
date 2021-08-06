@@ -22,6 +22,7 @@ $(document).ready(e => {
     // Bewegung des Spielers
     $(document).on('keydown', event => {
         bewegeSpieler(event);
+		interaktionenLaden();
     });
 	
 });
