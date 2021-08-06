@@ -120,4 +120,6 @@ function aendereAussehen() {
   console.log(Aussehen);
 }
 
-
+function spielerAufFeld(feld) {
+  return Math.floor(feld.position().top) === Math.floor($('#Player').position().top) && Math.floor(feld.position().left) === Math.floor($('#Player').position().left);
+}
