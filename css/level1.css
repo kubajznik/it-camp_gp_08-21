@@ -39,7 +39,9 @@ body {
 .wand_rechts {
     background-image: url("../pics/wand/Wand-rechts.png");
 }
-
+.wand {
+	background-image: url("../pics/wand/Wand.png");
+}
 .wand_links {
     background-image: url("../pics/wand/Wand-links.png");
 }
