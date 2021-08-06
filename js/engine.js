@@ -9,8 +9,10 @@ let aktivesSpielfeld;
 
 $(document).ready(e => {
 
+    $('#spielfeld').hide();
     $('#Start_Button').on('click', event => {
-      //('#Startbildschirm').toggleClass('hide');
+      $('#Startbildschirm').remove();
+      $('#spielfeld').show();
       console.log('Start 42');
       aktivesSpielfeld = 1;
       spielfeld = erzeugeSpielfeld(aktivesSpielfeld);
