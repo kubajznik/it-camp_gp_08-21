@@ -4,11 +4,15 @@ min-width: 1080px;
 
 #Startbildschirm {
   background-image: url("Startbild.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 100vh;
   z-index: 2;
+}
+
+#Erklaerung {
+  width: 40%;
 }
 
 #Player {
