@@ -66,3 +66,7 @@ function erzeugeGrundSpielfeld() {
     }
     return spielfeld;
 }
+
+function tuerOeffnet() {
+
+}
