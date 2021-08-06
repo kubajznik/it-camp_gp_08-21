@@ -30,9 +30,9 @@ function erzeugeSpielfeld(nummer) {
         case 3:
             aendereFeld(spielfeld, 19, 29, 'axt');
             aendereFeld(spielfeld, 19, 2, 'kiste');
-            aendereFeld(spielfeld, 19, 2, 'druckPlatte');
-            for(let i=1; i<31; i++){
+            for(let i=2; i<30; i++){
             aendereFeld(spielfeld, 12, i, 'fluss');
+            aendereFeld(spielfeld, 12, 15, 'bruecke');
             }
             break;
         case 4:for(let i = 2; i <= 25; i++) {

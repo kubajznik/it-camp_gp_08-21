@@ -1,7 +1,7 @@
 let spielfeld;
 let Aussehen = 3;
 let player = {};
-let kollisionsarrray = ["wand_unten", "wand_oben", "wand_links", "wand_rechts", "tuer_oben", "Wand"];
+let kollisionsarrray = ["wand_unten", "wand_oben", "wand_links", "wand_rechts", "tuer_oben" ,"fluss", "Wand"];
 let aktivesSpielfeld;
 
 // Um die Tür aus einem Level heraus zu erlauben, muss man spielfeld[14].kollidiert = false setzen.
