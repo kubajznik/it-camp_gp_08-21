@@ -86,10 +86,30 @@ body {
 
 /*Türe*/
 .tuer_oben, .tuer_unten {
-    background-image: url("../pics/wand/tuer_zu.png");
+    background-image: url("../pics/wand/TuerGeschlossen.png");
 }
 
 /*Props*/
 .Druckplatte {
 	background-image: url("../pics/boden/BodenDruckplatte.png");
+}
+
+.druckPlatte{
+    background-image: url("../pics/Props/Druckplatte.png")
+}
+
+.axt{
+    background-image: url("../pics/Props/Axt.png");
+}
+
+.bruecke{
+    background-image: url("../pics/boden/Bruecke.png");
+}
+
+.kiste{
+    background-image: url("../pics/Props/FassBoden.png")
+}
+
+.fluss{
+    background-image: url("../pics/boden/Wasser.png");
 }
